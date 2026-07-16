@@ -20,3 +20,9 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Language binding build artifacts
+bindings/java/target/
+bindings/csharp/**/bin/
+bindings/csharp/**/obj/
+bindings/c/build/

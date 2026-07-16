@@ -53,6 +53,13 @@ cp -f "$CORE_DIR/build/libs/"*.so "$LIB_DIR/" 2>/dev/null || true
 LIB_COUNT=$(find "$LIB_DIR" -name "*.so" | wc -l)
 echo "       → $LIB_COUNT shared libraries copied to lib/$ARCH/"
 
+# ── Copy C API header (foundation for Java/C#/C bindings) ──
+if [ -f "$CORE_DIR/capi/include/cvedix_c_api.h" ]; then
+    mkdir -p "$SDK_DIR/include/cvedix/capi"
+    cp -f "$CORE_DIR/capi/include/cvedix_c_api.h" "$SDK_DIR/include/cvedix/capi/"
+    echo "       → C API header copied to include/cvedix/capi/"
+fi
+
 # ── Strip debug symbols (reduce size) ──
 echo "[3/4] Stripping debug symbols..."
 for so in "$LIB_DIR"/*.so; do

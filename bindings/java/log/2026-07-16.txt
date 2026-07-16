@@ -1,0 +1,6 @@
+[2026-07-16 15:48:09.950][Info ][7a4d26dfe6c0][/home/cvedix/workspace/CoreAI/nodes/src/cvedix_file_src_node.cpp:24] [src] [filesrc location=/tmp/nonexistent.mp4 ! qtdemux ! h264parse ! avdec_h264 ! videoconvert ! appsink sync=false]
+[2026-07-16 15:48:09.974][Info ][7a4d26dfe6c0][/home/cvedix/workspace/CoreAI/nodes/infers/cvedix_yolo_detector_node.cpp:93] [det] Supported backends: TensorRT, OpenVINO, ONNX
+[2026-07-16 15:48:09.992][Info ][7a4d26dfe6c0][/home/cvedix/workspace/CoreAI/nodes/infers/cvedix_yolo_detector_node.cpp:250] [hw_info] TensorRT detected, using TensorRT backend
+[2026-07-16 15:48:10.007][Warn ][7a4d26dfe6c0][/home/cvedix/workspace/CoreAI/nodes/infers/cvedix_yolo_detector_node.cpp:366] [validate_model] TensorRT backend expects .engine file, got .onnx
+[2026-07-16 15:48:10.007][Error][7a4d26dfe6c0][/home/cvedix/workspace/CoreAI/nodes/infers/cvedix_yolo_detector_node.cpp:123] [det] Failed to initialize detector: Failed to load model/backend at construction time
+[2026-07-16 15:48:10.397][Warn ][7a4c29e556c0][/home/cvedix/workspace/CoreAI/nodes/src/cvedix_file_src_node.cpp:53] [src] open file failed, try again...

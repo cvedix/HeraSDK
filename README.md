@@ -12,8 +12,9 @@
 
 | Directory | Description |
 |-----------|-------------|
-| `include/` | Public C++ headers for SDK integration |
+| `include/` | Public C++ headers for SDK integration (+ `include/cvedix/capi/` — C API header) |
 | `lib/` | Pre-built shared libraries (`.so`) per architecture |
+| `bindings/` | Language bindings: **C**, **Java (JNA)**, **C# (.NET P/Invoke)** — see [bindings/README.md](bindings/README.md) |
 | `samples/` | Curated sample applications with step-by-step guides |
 | `docs/` | Architecture overview, node catalog, pipeline patterns |
 | `cmake/` | CMake integration (`find_package(cvedix)`) |
