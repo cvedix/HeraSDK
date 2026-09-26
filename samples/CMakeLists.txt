@@ -44,3 +44,6 @@ target_link_libraries(02_face_detection_blur ${COMMON_LIBS})
 
 add_executable(03_multi_branch 03_multi_branch/main.cpp)
 target_link_libraries(03_multi_branch ${COMMON_LIBS})
+
+add_executable(04_hera_face_lite 04_hera_face_lite/main.cpp)
+target_link_libraries(04_hera_face_lite ${COMMON_LIBS})
